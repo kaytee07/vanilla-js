@@ -1,1 +1,64 @@
-ECHO is on.
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Pacifico&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.todo {
+  width: 600px;
+  height: 55vh;
+  margin: 50px auto;
+  background: #000;
+  background: #222;
+
+  padding: 30px 40px;
+}
+.todo__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.todo__title {
+  width: fit-content;
+  margin: 0 auto;
+  font-family: "Noto Sans", sans-serif;
+  color: #fff;
+}
+.input {
+  width: 450px;
+  margin: 15px 0;
+  height: 45px;
+  border-radius: 6px;
+  border: none;
+  padding: 20px;
+}
+ul.todo__list {
+  width: 450px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+ul.todo__list li.todo__item {
+  width: 450px;
+  height: 50px;
+  border-bottom: 2px solid goldenrod;
+  line-height: 30px;
+  padding: 10px 0;
+  color: white;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.todo__item:hover {
+  cursor: default;
+}
+
+.done {
+  text-decoration: line-through;
+  color: #aaa;
+  border-bottom: 2px solid royalblue;
+}
